@@ -1,10 +1,18 @@
 import Banner from 'components/Banner';
+import NavContext from 'hoc/NavContext';
+import NavBar from 'components/NavBar';
 
 function App() {
 	return (
-		<div className="App sm:text-base">
+		<main className="App sm:text-base">
 			<Banner />
-		</div>
+
+			<div className="test">
+				<NavContext>
+					<NavBar />
+				</NavContext>
+			</div>
+		</main>
 	);
 }
 
