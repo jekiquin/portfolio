@@ -30,8 +30,8 @@ export default function Banner() {
 					About Me
 				</a>
 			</div>
-			<div className="p-2 h-52 md:h-80">
-				<img className="h-full" src={PROFILE.src} alt={PROFILE.alt} />
+			<div className="p-1 h-52 drop-shadow-xl rounded-lg border overflow-hidden md:h-80">
+				<img className="h-full rounded-lg" src={PROFILE.src} alt={PROFILE.alt} />
 			</div>
 		</section>
 	);
