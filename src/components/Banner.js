@@ -11,16 +11,16 @@ export default function Banner() {
 	));
 
 	return (
-		<section className="h-screen">
-			<div>
-				<p>Hey! My name is</p>
-				<h1>Jerick Iquin</h1>
+		<section className="container mx-auto h-screen flex flex-col items-center justify-center px-8 py-16 md:flex-row md:justify-between">
+			<div className="mb-12">
+				<p className="text-orange">Hey! My name is</p>
+				<h1 className="md:text-8xl">Jerick Iquin</h1>
 				<p>Fullstack Developer</p>
 				<div>{displayIcons}</div>
 				<a href="#about">About Me</a>
 			</div>
-			<div>
-				<img src={PROFILE.src} alt={PROFILE.alt} />
+			<div className="p-2 h-52 md:h-80">
+				<img className="h-full" src={PROFILE.src} alt={PROFILE.alt} />
 			</div>
 		</section>
 	);

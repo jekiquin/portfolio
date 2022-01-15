@@ -2,7 +2,7 @@ import Banner from 'components/Banner';
 
 function App() {
 	return (
-		<div className="App">
+		<div className="App sm:text-base">
 			<Banner />
 		</div>
 	);
