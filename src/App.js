@@ -8,7 +8,7 @@ function App() {
 		<main className="App sm:text-base">
 			<Banner />
 
-			<div className="test">
+			<div>
 				<NavContext>
 					<NavBar />
 				</NavContext>

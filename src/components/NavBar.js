@@ -14,7 +14,7 @@ export default function NavBar() {
 		<nav className="bg-dark-gray text-white sticky top-0">
 			<div className="container mx-auto py-4 px-6 flex justify-between items-center md:px-10">
 				<a href="/">
-					<img className="w-24 lg:w-40" src={main.src} alt={main.alt} />
+					<img className="w-24" src={main.src} alt={main.alt} />
 				</a>
 				<button className="md:hidden" onClick={handleClick}>
 					<i className="fas fa-bars"></i>

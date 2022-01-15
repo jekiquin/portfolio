@@ -19,9 +19,6 @@ const globalPlugins = ({ addBase, config }) => {
 		},
 		a: {
 			transition: 'all 0.5s ease-in-out'
-		},
-		section: {
-			margin: '2rem 0'
 		}
 	});
 };
