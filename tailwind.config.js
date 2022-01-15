@@ -13,6 +13,9 @@ const globalPlugins = ({ addBase, config }) => {
 			fontFamily: config('theme.fontFamily.kollektif'),
 			lineHeight: config('theme.lineHeight.normal'),
 			fontSize: config('theme.fontSize.xl')
+		},
+		'p, a': {
+			margin: '0.25rem 0'
 		}
 	});
 };
@@ -26,7 +29,7 @@ module.exports = {
 				kollektif: 'Kollektif, sans-serif',
 				montserrat: 'Montserrat, sans-serif'
 			},
-			color: {
+			colors: {
 				orange: '#ffc107',
 				blue: '#007bff',
 				green: '#17a2b8'
