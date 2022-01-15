@@ -19,7 +19,7 @@ export default function NavBar() {
 				<button className="md:hidden" onClick={handleClick}>
 					<i className="fas fa-bars"></i>
 				</button>
-				<NavList isMobile={false} isShown={true} />
+				<NavList isMobile={false} showNavList={true} />
 			</div>
 			<NavList isMobile={true} showNavList={showNavList} />
 		</nav>
