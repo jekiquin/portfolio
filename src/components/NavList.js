@@ -3,9 +3,9 @@ import { NAVLIST } from 'data/nav-list';
 import uniqid from 'uniqid';
 import NavItem from './NavItem';
 
-export default function NavList({ isMobile, isShown }) {
-	const listDisplayStyle = isMobile ? 'flex flex-col lg:hidden' : 'hidden lg:flex';
-	const showList = isShown ? 'NavList--show' : 'NavList';
+export default function NavList({ isMobile, showNavList }) {
+	const listDisplayStyle = isMobile ? 'flex flex-col md:hidden' : 'hidden md:flex md:h-fit';
+	const showList = showNavList ? 'NavList--show' : 'NavList';
 
 	return (
 		<ul
@@ -19,5 +19,5 @@ export default function NavList({ isMobile, isShown }) {
 
 NavList.propTypes = {
 	isMobile: PropTypes.bool.isRequired,
-	isShown: PropTypes.bool.isRequired
+	showNavList: PropTypes.bool.isRequired
 };
