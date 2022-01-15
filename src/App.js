@@ -1,6 +1,7 @@
 import Banner from 'components/Banner';
 import NavContext from 'hoc/NavContext';
 import NavBar from 'components/NavBar';
+import About from 'components/About';
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 				<NavContext>
 					<NavBar />
 				</NavContext>
+				<About />
 			</div>
 		</main>
 	);
