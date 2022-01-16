@@ -26,8 +26,8 @@ export default function Skills() {
 
 	return (
 		<div className="w-full min-w-skills p-4 md:w-1/2 md:p-0">
-			<div className="mx-auto ml-4 md:ml-8">
-				<h3 className="mb-4">Skills</h3>
+			<div className="mx-auto ml-4 text-gray-600 md:ml-8">
+				<h3 className="mb-4 md:text-xl">Skills</h3>
 				<div ref={hexGrid} className="flex flex-col width-11/12">
 					{displayHexRow}
 				</div>
