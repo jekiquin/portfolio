@@ -27,7 +27,7 @@ export default function Skills() {
 
 	return (
 		<div className="w-full min-w-skills p-4 md:w-1/2 md:p-0">
-			<div className="mx-auto ml-4 text-gray-600 md:ml-8">
+			<div className="mx-auto ml-4 md:ml-8">
 				<h3 className="md:text-2xl">Skills</h3>
 				<SkillName />
 

@@ -1,7 +1,8 @@
 const globalPlugins = ({ addBase, config }) => {
 	addBase({
 		html: {
-			scrollBehavior: 'smooth'
+			scrollBehavior: 'smooth',
+			color: '#343a40'
 		},
 		body: {
 			fontFamily: config('theme.fontFamily.montserrat'),
