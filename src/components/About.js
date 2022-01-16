@@ -10,7 +10,7 @@ export default function About() {
 			<SectionHeader>About Me</SectionHeader>
 			<div className="md:flex">
 				<article className="md:w-1/2">
-					<p className="whitespace-pre-line max-w-prose mx-auto">{ABOUTME.content}</p>
+					<p className="whitespace-pre-line mx-auto">{ABOUTME.content}</p>
 					<a className="cta" href={ABOUTME.emailRef}>
 						Get in Touch
 					</a>

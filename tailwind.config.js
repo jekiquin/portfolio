@@ -24,6 +24,9 @@ const globalPlugins = ({ addBase, config }) => {
 		},
 		a: {
 			transition: 'all 0.5s ease-in-out'
+		},
+		p: {
+			maxWidth: config('theme.maxWidth.prose')
 		}
 	});
 };
