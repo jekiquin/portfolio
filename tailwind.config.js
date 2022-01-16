@@ -9,10 +9,15 @@ const globalPlugins = ({ addBase, config }) => {
 			lineHeight: config('theme.lineHeight.normal'),
 			fontSize: config('theme.fontSize.3xl')
 		},
-		h2: {
+		'h2, h3': {
 			fontFamily: config('theme.fontFamily.kollektif'),
-			lineHeight: config('theme.lineHeight.normal'),
+			lineHeight: config('theme.lineHeight.normal')
+		},
+		h2: {
 			fontSize: config('theme.fontSize.xl')
+		},
+		h3: {
+			fontSize: config('theme.fontSize.lg')
 		},
 		'p, a': {
 			margin: '0.25rem 0'
