@@ -1,8 +1,12 @@
+import { ABOUTME } from 'data/about';
+import SectionHeader from 'components/SectionHeader';
+
 export default function About() {
 	return (
-		<section className="test" id="about">
+		<section id="about">
 			<div className="container mx-auto text-center">
-				<h2 className="md:text-3xl">About Me</h2>
+				<SectionHeader>About Me</SectionHeader>
+				<p class="whitespace-pre-line">{ABOUTME.content}</p>
 			</div>
 		</section>
 	);

@@ -30,4 +30,26 @@
 			transition: all 0.5s ease-in-out;
 		}
 	}
+
+	.ji-divider {
+		@apply bg-blue h-4 w-4 relative mx-auto rotate-45 mt-2 mb-8;
+
+		&::before {
+			@apply absolute w-8 h-1 bg-slate-300;
+			content: '';
+			top: 50%;
+			transform: translateY(-50%) rotate(-45deg);
+			left: -150%;
+			transform-origin: right;
+		}
+
+		&::after {
+			@apply absolute w-8 h-1 bg-slate-300;
+			content: '';
+			top: 50%;
+			transform: translateY(-50%) rotate(-45deg);
+			right: -150%;
+			transform-origin: left;
+		}
+	}
 }
