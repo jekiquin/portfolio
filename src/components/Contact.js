@@ -1,11 +1,10 @@
 import SectionHeader from './SectionHeader';
+import SectionContainer from 'hoc/SectionContainer';
 
 export default function Contact() {
 	return (
-		<section id="contact">
-			<div className="container mx-auto text-center">
-				<SectionHeader>Contact Me</SectionHeader>
-			</div>
-		</section>
+		<SectionContainer id="contact">
+			<SectionHeader>Contact Me</SectionHeader>
+		</SectionContainer>
 	);
 }
