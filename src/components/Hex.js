@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useSkillContext } from 'hoc/SkillsContext';
+import { SKILLPLACEHOLDER, useSkillContext } from 'hoc/SkillsContext';
 
 export default function Hex({ image, label }) {
 	const { setSkill } = useSkillContext();
@@ -8,11 +8,15 @@ export default function Hex({ image, label }) {
 	};
 
 	const handleMouseLeave = () => {
-		setSkill('');
+		setSkill(SKILLPLACEHOLDER);
 	};
 
 	return (
-		<li className="Hex" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+		<li
+			className="Hex"
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
+			onClick={handleMouseEnter}>
 			<img className="Hex__img" src={image} alt={label} title={label} />
 		</li>
 	);
