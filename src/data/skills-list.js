@@ -1,20 +1,19 @@
-import htmlLogo from '../assets/logo/html-1.svg';
-import cssLogo from '../assets/logo/css-3.svg';
-import jsLogo from '../assets/logo/javascript-1.svg';
-import sassLogo from '../assets/logo/sass-1.svg';
-import tailwindLogo from '../assets/logo/tailwind-css-1.svg';
-import reactLogo from '../assets/logo/react-2.svg';
-import nodeLogo from '../assets/logo/nodejs-1.svg';
-import expressLogo from '../assets/logo/express.svg';
-import mochaLogo from '../assets/logo/mocha.svg';
-import chaiLogo from '../assets/logo/chai-logo-svg-vector.svg';
-import jestLogo from '../assets/logo/jest-seeklogo.com.svg';
-import sqlLogo from '../assets/logo/mysql-6.svg';
-import npmLogo from '../assets/logo/npm-logo-svg-vector.svg';
-import pythonLogo from '../assets/logo/python-5.svg';
-import matlabLogo from '../assets/logo/matlab-seeklogo.com.svg';
+import htmlLogo from 'assets/logos/html-1.svg';
+import cssLogo from 'assets/logos/css-3.svg';
+import jsLogo from 'assets/logos/javascript-1.svg';
+import sassLogo from 'assets/logos/sass-1.svg';
+import tailwindLogo from 'assets/logos/tailwind-css-1.svg';
+import reactLogo from 'assets/logos/react-2.svg';
+import nodeLogo from 'assets/logos/nodejs-1.svg';
+import expressLogo from 'assets/logos/express.svg';
+import mochaLogo from 'assets/logos/mocha.svg';
+import chaiLogo from 'assets/logos/chai-logo-svg-vector.svg';
+import jestLogo from 'assets/logos/jest-seeklogo.com.svg';
+import sqlLogo from 'assets/logos/mysql-6.svg';
+import npmLogo from 'assets/logos/npm-logo-svg-vector.svg';
+import pythonLogo from 'assets/logos/python-5.svg';
 
-export const HEXWIDTH = 105;
+export const HEXWIDTH = 80;
 
 export const SKILLS = [
 	{
@@ -72,9 +71,5 @@ export const SKILLS = [
 	{
 		name: 'Python',
 		logo: pythonLogo
-	},
-	{
-		name: 'MATLAB',
-		logo: matlabLogo
 	}
 ];

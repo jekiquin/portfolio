@@ -41,7 +41,11 @@ module.exports = {
 				orange: '#ffc107',
 				blue: '#007bff',
 				green: '#17a2b8',
-				'dark-gray': '#1d2024'
+				'dark-gray': '#1d2024',
+				'light-blue': '#d1e4f9'
+			},
+			minWidth: {
+				skills: '250px'
 			}
 		}
 	},
