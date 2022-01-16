@@ -1,6 +1,7 @@
 @use './assets/fonts/kollektif/stylesheet.scss' as *;
 @use './assets/fonts/montserrat/stylesheet.scss' as *;
 @use './assets/fonts/norwester/stylesheet.scss' as *;
+@use './partials/index' as *;
 
 @tailwind base;
 @tailwind components;
@@ -35,21 +36,11 @@
 		@apply bg-blue h-4 w-4 relative mx-auto rotate-45 mt-2 mb-8;
 
 		&::before {
-			@apply absolute w-8 h-1 bg-slate-300;
-			content: '';
-			top: 50%;
-			transform: translateY(-50%) rotate(-45deg);
-			left: -150%;
-			transform-origin: right;
+			@include divider-sides(before);
 		}
 
 		&::after {
-			@apply absolute w-8 h-1 bg-slate-300;
-			content: '';
-			top: 50%;
-			transform: translateY(-50%) rotate(-45deg);
-			right: -150%;
-			transform-origin: left;
+			@include divider-sides(after);
 		}
 	}
 }

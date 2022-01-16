@@ -1,0 +1,14 @@
+@mixin divider-sides($side) {
+	@apply absolute w-8 h-1 bg-slate-300;
+	content: '';
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+	@if $side == before {
+		left: -150%;
+		transform-origin: right;
+	}
+	@if $side == after {
+		right: -150%;
+		transform-origin: left;
+	}
+}
