@@ -1,10 +1,8 @@
-import { IMAGES } from 'data/images';
+import { PROFILE } from 'data/images';
 import { NAVLIST } from 'data/nav-list';
 import SocialMediaList from './SocialMediaList';
 
 export default function Banner() {
-	const { PROFILE } = IMAGES;
-
 	return (
 		<section className="container mx-auto h-screen flex flex-col items-center justify-center px-8 py-16 sm:flex-row sm:justify-between">
 			<div className="mb-12">

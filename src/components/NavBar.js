@@ -1,10 +1,9 @@
 import NavList from 'components/NavList';
-import { LOGOS } from 'data/images';
+import { LOGO } from 'data/images';
 import { useNavContext } from 'hoc/NavContext';
 
 export default function NavBar() {
 	const { showNavList, setShowNavList } = useNavContext();
-	const { main } = LOGOS;
 
 	const handleClick = () => {
 		setShowNavList((prevState) => !prevState);
@@ -14,7 +13,7 @@ export default function NavBar() {
 		<nav className="bg-dark-gray text-white sticky top-0  z-50">
 			<div className="container mx-auto h-20 py-4 px-6 flex justify-between items-center md:px-10">
 				<a href="/">
-					<img className="w-24" src={main.src} alt={main.alt} />
+					<img className="w-24" src={LOGO.src} alt={LOGO.alt} />
 				</a>
 				<button className="md:hidden" onClick={handleClick}>
 					<i className="fas fa-bars"></i>

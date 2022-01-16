@@ -3,6 +3,7 @@ import NavContext from 'hoc/NavContext';
 import NavBar from 'components/NavBar';
 import About from 'components/About';
 import Contact from 'components/Contact';
+import Projects from 'components/Projects';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 					<NavBar />
 				</NavContext>
 				<About />
+				<Projects />
 				<Contact />
 			</div>
 		</main>
