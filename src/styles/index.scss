@@ -83,7 +83,7 @@
 	}
 
 	.ji-divider {
-		@apply bg-blue h-4 w-4 relative mx-auto rotate-45;
+		@apply bg-blue h-4 w-4 mx-auto rotate-45;
 
 		&::before {
 			@include divider-sides(before);

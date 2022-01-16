@@ -11,8 +11,8 @@ export default function NavBar() {
 	};
 
 	return (
-		<nav className="bg-dark-gray text-white sticky top-0">
-			<div className="container mx-auto py-4 px-6 flex justify-between items-center md:px-10">
+		<nav className="bg-dark-gray text-white sticky top-0  z-50">
+			<div className="container mx-auto h-20 py-4 px-6 flex justify-between items-center md:px-10">
 				<a href="/">
 					<img className="w-24" src={main.src} alt={main.alt} />
 				</a>
