@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import uniqid from 'uniqid';
 import { setMaxHexCol, setSkillsGroup } from 'utils/utils';
 import HexRow from 'components/HexRow';
+import SkillName from './SkillName';
 
 export default function Skills() {
 	const [hexGroup, setHexGroup] = useState([]);
@@ -27,7 +28,9 @@ export default function Skills() {
 	return (
 		<div className="w-full min-w-skills p-4 md:w-1/2 md:p-0">
 			<div className="mx-auto ml-4 text-gray-600 md:ml-8">
-				<h3 className="mb-4 md:text-xl">Skills</h3>
+				<h3 className="md:text-2xl">Skills</h3>
+				<SkillName />
+
 				<div ref={hexGrid} className="flex flex-col width-11/12">
 					{displayHexRow}
 				</div>

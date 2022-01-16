@@ -1,6 +1,7 @@
 import { ABOUTME } from 'data/about';
 import SectionHeader from 'components/SectionHeader';
 import Skills from './Skills';
+import SkillsContext from 'hoc/SkillsContext';
 
 export default function About() {
 	return (
@@ -14,7 +15,9 @@ export default function About() {
 							Get in Touch
 						</a>
 					</article>
-					<Skills />
+					<SkillsContext>
+						<Skills />
+					</SkillsContext>
 				</div>
 			</div>
 		</section>
