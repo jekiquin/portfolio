@@ -13,10 +13,10 @@
 
 @layer base {
 	section {
-		padding: 1rem 0;
+		padding: 1rem 1rem;
 
 		@media screen and (min-width: 768px) {
-			padding: 3rem 0;
+			padding: 3rem 2rem;
 		}
 	}
 }
