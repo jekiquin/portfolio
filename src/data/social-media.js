@@ -1,3 +1,5 @@
+export const emailRef = 'mailto:jci.dev.0@gmail.com?subject=Re: Portfolio';
+
 export const SOCIALMEDIA = [
 	{
 		icon: 'fab fa-github',
@@ -9,6 +11,6 @@ export const SOCIALMEDIA = [
 	},
 	{
 		icon: 'fas fa-envelope',
-		href: 'mailto:jci.dev.0@gmail.com?subject=Re: Portfolio'
+		href: emailRef
 	}
 ];
