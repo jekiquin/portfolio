@@ -1,4 +1,5 @@
 import { IMAGES } from 'data/images';
+import { NAVLIST } from 'data/nav-list';
 import SocialMediaList from './SocialMediaList';
 
 export default function Banner() {
@@ -13,7 +14,7 @@ export default function Banner() {
 					<p>Fullstack Developer</p>
 				</div>
 				<SocialMediaList onFooter={false} />
-				<a className="cta" href="#about">
+				<a className="cta" href={NAVLIST.find((nav) => nav.label === 'about').href}>
 					About Me
 				</a>
 			</div>
