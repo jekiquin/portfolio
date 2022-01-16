@@ -13,7 +13,7 @@
 
 @layer base {
 	section {
-		@apply p-4;
+		@apply p-4 scroll-mt-20;
 
 		&:nth-child(even) {
 			@apply bg-light-blue;
