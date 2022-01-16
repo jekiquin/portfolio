@@ -13,9 +13,7 @@ export default function Banner() {
 					<p>Fullstack Developer</p>
 				</div>
 				<SocialMediaList onFooter={false} />
-				<a
-					className="inline-block text-green py-2 px-4 border border-green rounded-full hover:bg-green hover:text-white md:ml-8"
-					href="#about">
+				<a className="cta" href="#about">
 					About Me
 				</a>
 			</div>

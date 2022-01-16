@@ -43,4 +43,8 @@
 			@include divider-sides(after);
 		}
 	}
+
+	.cta {
+		@apply inline-block text-green py-2 px-4 border border-green rounded-full hover:bg-green hover:text-white md:ml-8;
+	}
 }

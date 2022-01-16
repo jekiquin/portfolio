@@ -7,6 +7,9 @@ export default function About() {
 			<div className="container mx-auto text-center">
 				<SectionHeader>About Me</SectionHeader>
 				<p class="whitespace-pre-line">{ABOUTME.content}</p>
+				<a className="cta" href={ABOUTME.emailRef}>
+					Get in Touch
+				</a>
 			</div>
 		</section>
 	);
