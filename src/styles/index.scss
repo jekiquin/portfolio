@@ -86,7 +86,7 @@
 		$parent: &;
 		&:hover {
 			// doesn't like the # for some odd reason. This is tailwind @ directive stuff
-			#{$parent}__modal {
+			.Parent__modal {
 				display: flex;
 				animation: rotate-modal 2s ease-in-out 1 forwards;
 			}
