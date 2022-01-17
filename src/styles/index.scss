@@ -83,10 +83,12 @@
 	}
 
 	.Project {
-		&__ctx {
-			@apply text-white text-center p-4 w-full absolute bottom-4;
-			text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-			transition: all 1s ease-in-out;
+		$parent: &;
+		&:hover {
+			#{$parent}__modal {
+				display: flex;
+				animation: rotate-modal 2s ease-in-out 1 forwards;
+			}
 		}
 	}
 

@@ -49,7 +49,8 @@ module.exports = {
 				blue: '#007bff',
 				green: '#17a2b8',
 				'dark-gray': '#1d2024',
-				'light-blue': '#d1e4f9'
+				'light-blue': '#d1e4f9',
+				'trans-green': 'rgba(23, 162, 184, 0.7);'
 			},
 			minWidth: {
 				skills: '250px'

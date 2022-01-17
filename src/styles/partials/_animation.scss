@@ -1,0 +1,10 @@
+@keyframes rotate-modal {
+	0% {
+		transform: rotateY(0deg) scaleX(0);
+		opacity: 0;
+	}
+	100% {
+		transform: rotateY(360deg) scaleX(100%);
+		opacity: 1;
+	}
+}
