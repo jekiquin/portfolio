@@ -10,7 +10,7 @@ export default function NavBar() {
 	};
 
 	return (
-		<nav className="bg-dark-gray text-white sticky top-0  z-50">
+		<nav className="relative bg-dark-gray text-white sticky top-0  z-50">
 			<div className="container mx-auto h-20 py-4 px-6 flex justify-between items-center md:px-10">
 				<a href="/">
 					<img className="w-24" src={LOGO.src} alt={LOGO.alt} />
@@ -20,7 +20,9 @@ export default function NavBar() {
 				</button>
 				<NavList isMobile={false} showNavList={true} />
 			</div>
-			<NavList isMobile={true} showNavList={showNavList} />
+			<div className="absolute z-5 w-full bg-dark-gray">
+				<NavList isMobile={true} showNavList={showNavList} />
+			</div>
 		</nav>
 	);
 }
