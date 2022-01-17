@@ -82,14 +82,15 @@
 		}
 	}
 
-	.Project {
-		$parent: &;
-		&:hover {
-			// doesn't like the # for some odd reason. This is tailwind @ directive stuff
-			#{$parent}__modal {
-				display: flex;
-				animation: rotate-modal 2s ease-in-out 1 forwards;
-			}
+	.modal {
+		transform: scaleX(0);
+		&--hide {
+			animation: rotate-modal-reverse 2s ease-in-out 1 normal both;
+			transform: scaleX(0);
+		}
+
+		&--view {
+			animation: rotate-modal 2s ease-in-out 1 normal both;
 		}
 	}
 
