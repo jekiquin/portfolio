@@ -7,7 +7,11 @@ export default function HexRow({ imageObj }) {
 		<Hex key={uniqid()} image={hex.logo} label={hex.name} />
 	));
 
-	return <ul className="HexRow">{displayHex}</ul>;
+	return (
+		<ul className="flex gap-hex-gap mt-hex-top first:mt-hex-first last:mb-hex-bottom even:ml-hex-left">
+			{displayHex}
+		</ul>
+	);
 }
 
 HexRow.propTypes = {

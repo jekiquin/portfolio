@@ -35,6 +35,8 @@ const globalPlugins = ({ addBase, config }) => {
 	});
 };
 
+const HEXSPACING = 1;
+
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
@@ -58,9 +60,16 @@ module.exports = {
 			height: {
 				'20vh': '20vh'
 			},
+			spacing: {
+				'hex-first': `${HEXSPACING / 2}rem`,
+				'hex-top': `${0 - HEXSPACING}rem`,
+				'hex-bottom': `${1.5 * HEXSPACING}rem`,
+				'hex-left': '2.6rem',
+				'hex-gap': '0.2rem'
+			},
 			animation: {
 				slideIn: 'slideIn 1s ease-in-out 1 forwards',
-				popout: 'popout 1s ease-in-out 1'
+				popout: 'popout 1s ease-in-out 1 forwards'
 			},
 			keyframes: {
 				slideIn: {

@@ -30,25 +30,6 @@
 		transition: all 0.5s ease-in-out;
 	}
 
-	.HexRow {
-		$hex-spacing: 1rem;
-		display: flex;
-		gap: 0.2rem;
-		margin-top: calc(0rem - $hex-spacing);
-
-		&:first-child {
-			margin-top: calc($hex-spacing/2);
-		}
-
-		&:last-child {
-			margin-bottom: $hex-spacing + calc($hex-spacing/2);
-		}
-
-		&:nth-child(even) {
-			margin-left: 2.6rem;
-		}
-	}
-
 	.Hex {
 		$hex-parent: &;
 		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);

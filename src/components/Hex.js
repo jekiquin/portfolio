@@ -22,7 +22,7 @@ export default function Hex({ image, label }) {
 	return (
 		<li
 			ref={hexRef}
-			className="Hex"
+			className="Hex scale-0"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 			onClick={handleMouseEnter}>
