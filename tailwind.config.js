@@ -71,7 +71,10 @@ module.exports = {
 				slideIn: 'slideIn 1s ease-in-out 1 forwards',
 				popout: 'popout 1s ease-in-out 1 forwards',
 				'rotate-modal': 'rotate-modal 2s ease-in-out 1 forwards',
-				'rotate-modal-reverse': 'rotate-modal-reverse 2s ease-in-out 1 forwards'
+				'rotate-modal-reverse': 'rotate-modal-reverse 2s ease-in-out 1 forwards',
+				heroSlide: 'heroSlide 1s cubic-bezier(.32,.51,.64,1.15)  0.5s 1 forwards',
+				'heroSlide-reverse':
+					'heroSlide-reverse 1s cubic-bezier(.32,.51,.64,1.15)  0.5s 1 forwards'
 			},
 			keyframes: {
 				slideIn: {
@@ -99,6 +102,14 @@ module.exports = {
 				'rotate-modal-reverse': {
 					'100%': { transform: 'rotateY(0deg) scaleX(0)' },
 					'0%': { transform: 'rotateY(360deg) scaleX(1)' }
+				},
+				heroSlide: {
+					'0%': { transform: 'translateX(-999%)' },
+					'100%': { transform: 'translateX(1)', opacity: '1' }
+				},
+				'heroSlide-reverse': {
+					'0%': { transform: 'translateX(999%)' },
+					'100%': { transform: 'translateX(1)', opacity: '1' }
 				}
 			}
 		}
