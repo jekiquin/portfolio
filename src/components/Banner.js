@@ -7,7 +7,7 @@ export default function Banner() {
 		<section className="container w-full mx-auto h-screen flex flex-col items-center justify-center px-8 py-16 overflow-hidden sm:flex-row sm:justify-evenly">
 			<div className="mb-12 opacity-0 animate-heroSlide">
 				<div className="relative border-l-4 border-blue pl-2 md:pl-6 md:border-l-8">
-					<p className="text-orange">Hey! My name is</p>
+					<p className="text-orange-600">Hey! My name is</p>
 					<h1 className="text-blue md:text-8xl">Jerick Iquin</h1>
 					<p>Fullstack Developer</p>
 				</div>
