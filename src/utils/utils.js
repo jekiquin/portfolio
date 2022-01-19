@@ -29,8 +29,7 @@ export function setSkillsGroup(maxColSize, setHexGroup) {
 
 const options = {
 	root: null,
-	rootMargin: '0px',
-	threshold: 0.05
+	rootMargin: '0px'
 };
 
 function sectionObserverCallback(entries, observer) {
@@ -44,11 +43,17 @@ function sectionObserverCallback(entries, observer) {
 function hexObserverCallback(entries, observer) {
 	entries.forEach((entry, idx) => {
 		if (entry.isIntersecting) {
-			entry.target.classList.add('animate-popout', 'animation-delay-500');
+			entry.target.classList.add('animate-popout');
 		}
 	});
 	console.log(entries);
 }
-export const sectionObserver = new IntersectionObserver(sectionObserverCallback, options);
+export const sectionObserver = new IntersectionObserver(sectionObserverCallback, {
+	...options,
+	threshold: 0.1
+});
 
-export const hexObserver = new IntersectionObserver(hexObserverCallback, options);
+export const hexObserver = new IntersectionObserver(hexObserverCallback, {
+	...options,
+	threshold: 0.05
+});
