@@ -11,7 +11,7 @@ export default function Projects() {
 	return (
 		<SectionContainer id="projects">
 			<SectionHeader>{title}</SectionHeader>
-			<div className="flex justify-center items-center flex-wrap gap-4">
+			<div className="w-fit mx-auto grid grid-cols-1 justify-items-center justify-center gap-8 lg:grid-cols-2 lg:gap-16">
 				{displayProjects}
 			</div>
 		</SectionContainer>

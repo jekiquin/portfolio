@@ -8,17 +8,16 @@ export default function About() {
 	return (
 		<SectionContainer id="about">
 			<SectionHeader>About Me</SectionHeader>
-			<div className="md:flex">
-				<article className="md:w-1/2">
-					<p className="whitespace-pre-line mx-auto">{ABOUTME.content}</p>
-					<a className="cta" href={ABOUTME.emailRef}>
-						Get in Touch
-					</a>
-				</article>
-				<SkillsContext>
-					<Skills />
-				</SkillsContext>
-			</div>
+
+			<article className="mx-auto md:w-1/2">
+				<p className="whitespace-pre-line mx-auto">{ABOUTME.content}</p>
+				<a className="cta" href={ABOUTME.emailRef}>
+					Get in Touch
+				</a>
+			</article>
+			<SkillsContext>
+				<Skills />
+			</SkillsContext>
 		</SectionContainer>
 	);
 }
