@@ -35,14 +35,12 @@
 	}
 
 	.modal {
-		transform: scaleX(0);
 		&--hide {
-			animation: rotate-modal-reverse 2s ease-in-out 1 normal both;
-			transform: scaleX(0);
+			@apply animate-rotate-modal-reverse;
 		}
 
 		&--view {
-			animation: rotate-modal 2s ease-in-out 1 normal both;
+			@apply animate-rotate-modal;
 		}
 	}
 

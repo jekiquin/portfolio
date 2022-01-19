@@ -69,7 +69,9 @@ module.exports = {
 			},
 			animation: {
 				slideIn: 'slideIn 1s ease-in-out 1 forwards',
-				popout: 'popout 1s ease-in-out 1 forwards'
+				popout: 'popout 1s ease-in-out 1 forwards',
+				'rotate-modal': 'rotate-modal 2s ease-in-out 1 forwards',
+				'rotate-modal-reverse': 'rotate-modal-reverse 2s ease-in-out 1 forwards'
 			},
 			keyframes: {
 				slideIn: {
@@ -89,6 +91,14 @@ module.exports = {
 					'100%': {
 						transform: 'scale(1)'
 					}
+				},
+				'rotate-modal': {
+					'0%': { transform: 'rotateY(0deg) scaleX(0)' },
+					'100%': { transform: 'rotateY(360deg) scaleX(1)' }
+				},
+				'rotate-modal-reverse': {
+					'100%': { transform: 'rotateY(0deg) scaleX(0)' },
+					'0%': { transform: 'rotateY(360deg) scaleX(1)' }
 				}
 			}
 		}

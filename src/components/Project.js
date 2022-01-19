@@ -23,7 +23,7 @@ export default function Project({ project }) {
 			<div className="h-fit relative">
 				<img className="object-cover" src={displayImage} alt={name} />
 				<div
-					className={`${modalView} absolute top-0 left-0 h-full w-full p-4 flex flex-col justify-between items-center bg-trans-green text-white`}>
+					className={`${modalView} scale-x-0 absolute top-0 left-0 h-full w-full p-4 flex flex-col justify-between items-center bg-trans-green text-white`}>
 					<h3>{description}</h3>
 					<div className="flex gap-4 justify-center items-center  text-4xl">
 						{deployedURL && (
