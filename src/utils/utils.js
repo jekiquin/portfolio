@@ -43,10 +43,11 @@ function sectionObserverCallback(entries, observer) {
 function hexObserverCallback(entries, observer) {
 	entries.forEach((entry, idx) => {
 		if (entry.isIntersecting) {
-			entry.target.classList.add('animate-popout');
+			Array.prototype.forEach.call(entry.target.children, (child, idx) =>
+				child.classList.add('animate-popout')
+			);
 		}
 	});
-	console.log(entries);
 }
 export const sectionObserver = new IntersectionObserver(sectionObserverCallback, {
 	...options,
