@@ -54,6 +54,21 @@ module.exports = {
 			},
 			minWidth: {
 				skills: '250px'
+			},
+			animation: {
+				wow: 'wow 1s ease-in-out 1 forwards'
+			},
+			keyframes: {
+				wow: {
+					'0%': {
+						transform: 'translateY(4rem)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0%)',
+						opacity: '1'
+					}
+				}
 			}
 		}
 	},

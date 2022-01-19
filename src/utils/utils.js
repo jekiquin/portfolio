@@ -26,3 +26,18 @@ export function setSkillsGroup(maxColSize, setHexGroup) {
 	});
 	setHexGroup(outputGroup);
 }
+
+const options = {
+	root: null,
+	rootMargin: '0px',
+	threshold: 0.05
+};
+
+function observerCallback(entries, observer) {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('animate-wow');
+		}
+	});
+}
+export const observer = new IntersectionObserver(observerCallback, options);
