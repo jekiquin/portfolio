@@ -5,11 +5,11 @@ import NavItem from './NavItem';
 
 export default function NavList({ isMobile, showNavList }) {
 	const listDisplayStyle = isMobile ? 'flex flex-col md:hidden' : 'hidden md:flex md:h-fit';
-	const showList = showNavList ? 'NavList--show' : 'NavList';
+	const showList = showNavList ? 'h-20vh' : 'h-0';
 
 	return (
 		<ul
-			className={`${listDisplayStyle} ${showList} items-center justify-evenly overflow-hidden`}>
+			className={`${listDisplayStyle} ${showList} transition-custom-all items-center justify-evenly overflow-hidden`}>
 			{NAVLIST.map((navItem) => (
 				<NavItem key={uniqid()} navItem={navItem} />
 			))}

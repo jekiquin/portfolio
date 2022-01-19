@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { useRef, useEffect } from 'react';
-import { observer } from 'utils/utils';
+import { sectionObserver } from 'utils/utils';
 
 export default function SectionContainer({ className, id, children }) {
 	const sectionRef = useRef();
 
 	useEffect(() => {
-		observer.observe(sectionRef.current);
+		sectionObserver.observe(sectionRef.current);
 	}, []);
 
 	return (

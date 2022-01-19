@@ -33,11 +33,22 @@ const options = {
 	threshold: 0.05
 };
 
-function observerCallback(entries, observer) {
-	entries.forEach((entry) => {
+function sectionObserverCallback(entries, observer) {
+	entries.forEach((entry, idx) => {
 		if (entry.isIntersecting) {
-			entry.target.classList.add('animate-wow');
+			entry.target.classList.add('animate-slideIn');
 		}
 	});
 }
-export const observer = new IntersectionObserver(observerCallback, options);
+
+function hexObserverCallback(entries, observer) {
+	entries.forEach((entry, idx) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('animate-popout', 'animation-delay-500');
+		}
+	});
+	console.log(entries);
+}
+export const sectionObserver = new IntersectionObserver(sectionObserverCallback, options);
+
+export const hexObserver = new IntersectionObserver(hexObserverCallback, options);

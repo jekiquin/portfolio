@@ -55,11 +55,15 @@ module.exports = {
 			minWidth: {
 				skills: '250px'
 			},
+			height: {
+				'20vh': '20vh'
+			},
 			animation: {
-				wow: 'wow 1s ease-in-out 1 forwards'
+				slideIn: 'slideIn 1s ease-in-out 1 forwards',
+				popout: 'popout 1s ease-in-out 1'
 			},
 			keyframes: {
-				wow: {
+				slideIn: {
 					'0%': {
 						transform: 'translateY(4rem)',
 						opacity: '0'
@@ -68,9 +72,17 @@ module.exports = {
 						transform: 'translateY(0%)',
 						opacity: '1'
 					}
+				},
+				popout: {
+					'0%': {
+						transform: 'scale(0)'
+					},
+					'100%': {
+						transform: 'scale(1)'
+					}
 				}
 			}
 		}
 	},
-	plugins: [globalPlugins]
+	plugins: [globalPlugins, require('tailwindcss-animation-delay')]
 };

@@ -1,8 +1,16 @@
 import PropTypes from 'prop-types';
+import { useEffect, useRef } from 'react';
 import { SKILLPLACEHOLDER, useSkillContext } from 'hoc/SkillsContext';
+import { hexObserver } from 'utils/utils';
 
 export default function Hex({ image, label }) {
 	const { setSkill } = useSkillContext();
+	const hexRef = useRef();
+
+	useEffect(() => {
+		hexObserver.observe(hexRef.current);
+	}, []);
+
 	const handleMouseEnter = () => {
 		setSkill(label);
 	};
@@ -13,6 +21,7 @@ export default function Hex({ image, label }) {
 
 	return (
 		<li
+			ref={hexRef}
 			className="Hex"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
