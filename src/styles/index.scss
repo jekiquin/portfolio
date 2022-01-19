@@ -31,30 +31,7 @@
 	}
 
 	.Hex {
-		$hex-parent: &;
 		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-		width: 5rem;
-		height: 5rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-shrink: 0;
-		background-color: rgba(white, 0.4);
-		transition: all 0.5s ease-in-out;
-		cursor: pointer;
-		opacity: 0.4;
-
-		&:hover {
-			background-color: rgba(white, 1);
-			transform: scale(1.2);
-			opacity: 1;
-		}
-
-		&__img {
-			width: 50%;
-			height: auto;
-			object-fit: fill;
-		}
 	}
 
 	.modal {

@@ -22,11 +22,16 @@ export default function Hex({ image, label }) {
 	return (
 		<li
 			ref={hexRef}
-			className="Hex scale-0"
+			className="Hex flex justify-center items-center shrink-0 bg-white opacity-40 transition-custom-all scale-0 w-20 h-20 hover:opacity-100"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 			onClick={handleMouseEnter}>
-			<img className="Hex__img" src={image} alt={label} title={label} />
+			<img
+				className="w-1/2 object-fill transition-custom-all hover:scale-110"
+				src={image}
+				alt={label}
+				title={label}
+			/>
 		</li>
 	);
 }
