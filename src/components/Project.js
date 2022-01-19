@@ -1,11 +1,17 @@
 import PropTypes from 'prop-types';
 import { PLACEHOLDER } from 'data/images';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { projectObserver } from 'utils/utils';
 
 export default function Project({ project }) {
 	const [modalView, setModalView] = useState('modal');
+	const projectRef = useRef();
 	const { name, image, stacks, description, deployedURL, githubURL } = project;
 	const displayImage = image || PLACEHOLDER.src;
+
+	useEffect(() => {
+		projectObserver.observe(projectRef.current);
+	}, []);
 
 	const handleMouseEnter = () => {
 		setModalView('modal--view');
@@ -17,7 +23,8 @@ export default function Project({ project }) {
 
 	return (
 		<div
-			className="Project h-96 w-96 rounded-xl overflow-hidden bg-light-blue"
+			ref={projectRef}
+			className="scale-0 w-80 h-80 rounded-xl overflow-hidden bg-light-blue sm:w-96 sm:h-96"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}>
 			<div className="h-fit relative">

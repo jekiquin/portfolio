@@ -43,12 +43,21 @@ function sectionObserverCallback(entries, observer) {
 function hexObserverCallback(entries, observer) {
 	entries.forEach((entry, idx) => {
 		if (entry.isIntersecting) {
-			Array.prototype.forEach.call(entry.target.children, (child, idx) =>
+			Array.prototype.forEach.call(entry.target.children, (child) =>
 				child.classList.add('animate-popout')
 			);
 		}
 	});
 }
+
+function projectObserverCallback(entries, observer) {
+	entries.forEach((entry, idx) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('animate-popout');
+		}
+	});
+}
+
 export const sectionObserver = new IntersectionObserver(sectionObserverCallback, {
 	...options,
 	threshold: 0.1
@@ -57,4 +66,9 @@ export const sectionObserver = new IntersectionObserver(sectionObserverCallback,
 export const hexObserver = new IntersectionObserver(hexObserverCallback, {
 	...options,
 	threshold: 0.05
+});
+
+export const projectObserver = new IntersectionObserver(projectObserverCallback, {
+	...options,
+	threshold: 1
 });
