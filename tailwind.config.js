@@ -110,6 +110,9 @@ module.exports = {
 					'0%': { transform: 'translateX(999%)' },
 					'100%': { transform: 'translateX(1)', opacity: '1' }
 				}
+			},
+			backgroundImage: {
+				hero: "url('../assets/backgrounds/hero.jpg')"
 			}
 		}
 	},
