@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 
-export const SKILLPLACEHOLDER = 'Choose skill...';
+export const SKILLPLACEHOLDER = 'Hover over my skills!';
 
 const SkillContext = createContext();
 

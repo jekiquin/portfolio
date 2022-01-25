@@ -10,7 +10,9 @@ export default function SkillName() {
 				options={{
 					strings: skill,
 					autoStart: true,
-					deleteAll: 1000
+					deleteAll: 1000,
+					delay: 100,
+					wrapperClassName: 'font-semibold'
 				}}
 			/>
 		</div>
