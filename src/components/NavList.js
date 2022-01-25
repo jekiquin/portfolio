@@ -11,7 +11,7 @@ export default function NavList({ isMobile, showNavList }) {
 		<ul
 			className={`${listDisplayStyle} ${showList} transition-custom-all items-center justify-evenly overflow-hidden`}>
 			{NAVLIST.map((navItem) => (
-				<NavItem key={uniqid()} navItem={navItem} />
+				<NavItem key={uniqid()} navItem={navItem} isMobile={isMobile} />
 			))}
 		</ul>
 	);
