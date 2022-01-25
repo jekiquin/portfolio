@@ -4,7 +4,7 @@ import SocialMediaList from './SocialMediaList';
 
 export default function Banner() {
 	return (
-		<section className="bg-hero bg-cover bg-fixed relative">
+		<section className="bg-hero bg-cover bg-fixed bg-center relative">
 			<div className="absolute w-full h-full top-0 left-0 right-0 bg-stone-900 opacity-80"></div>
 			<div className="container w-full mx-auto h-screen flex flex-col items-center justify-center px-8 py-16 overflow-hidden sm:flex-row sm:justify-evenly">
 				<div className="mb-12 opacity-0 animate-heroSlide">

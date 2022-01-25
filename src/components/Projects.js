@@ -9,7 +9,7 @@ export default function Projects() {
 
 	const displayProjects = projects.map((project) => <Project key={uniqid()} project={project} />);
 	return (
-		<SectionContainer id="projects" className="bg-projects bg-fixed bg-cover">
+		<SectionContainer id="projects" className="bg-projects bg-fixed bg-cover bg-center">
 			<SectionHeader>{title}</SectionHeader>
 			<div className="w-fit mx-auto grid grid-cols-1 justify-items-center justify-center gap-8 lg:grid-cols-2 lg:gap-16">
 				{displayProjects}
