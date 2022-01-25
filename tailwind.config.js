@@ -112,7 +112,8 @@ module.exports = {
 				}
 			},
 			backgroundImage: {
-				hero: "url('../assets/backgrounds/hero.jpg')"
+				hero: "url('../assets/backgrounds/hero.jpg')",
+				projects: "url('../assets/backgrounds/projects.avif')"
 			}
 		}
 	},
