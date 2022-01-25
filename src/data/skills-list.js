@@ -12,6 +12,11 @@ import jestLogo from 'assets/logos/jest-seeklogo.com.svg';
 import sqlLogo from 'assets/logos/mysql-6.svg';
 import npmLogo from 'assets/logos/npm-logo-svg-vector.svg';
 import pythonLogo from 'assets/logos/python-5.svg';
+import postgresLogo from 'assets/logos/postgresql.svg';
+import knexLogo from 'assets/logos/knex-1.svg';
+import sequelizeLogo from 'assets/logos/sequelize.svg';
+import reduxLogo from 'assets/logos/redux.svg';
+import hugoLogo from 'assets/logos/hugo.svg';
 
 export const HEXWIDTH = 80;
 
@@ -41,6 +46,10 @@ export const SKILLS = [
 		logo: reactLogo
 	},
 	{
+		name: 'Redux',
+		logo: reduxLogo
+	},
+	{
 		name: 'NodeJS',
 		logo: nodeLogo
 	},
@@ -61,8 +70,24 @@ export const SKILLS = [
 		logo: jestLogo
 	},
 	{
-		name: 'SQL',
+		name: 'MySql',
 		logo: sqlLogo
+	},
+	{
+		name: 'Postgres',
+		logo: postgresLogo
+	},
+	{
+		name: 'Knex',
+		logo: knexLogo
+	},
+	{
+		name: 'Sequelize',
+		logo: sequelizeLogo
+	},
+	{
+		name: 'Hugo',
+		logo: hugoLogo
 	},
 	{
 		name: 'NPM',

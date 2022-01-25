@@ -34,7 +34,6 @@ export const PROJECTS = {
 		},
 		{
 			name: 'BrainFlix',
-			location: 'BrainStation',
 			role: 'Solo',
 			date: 'September 2021',
 			image: null,
@@ -42,6 +41,27 @@ export const PROJECTS = {
 			stacks: ['React', 'React Router', 'Axios', 'SASS', 'NodeJs', 'Express'],
 			deployedURL: '',
 			githubURL: 'https://github.com/jekiquin/jerick-iquin-brainflix'
+		},
+		{
+			name: 'Simple Multiple Countdown Timers',
+			role: 'Solo',
+			date: 'December 2021',
+			image: null,
+			description: 'Just a simple countdown timers implementing context and reducers',
+			stacks: ['React', 'Sass', 'Tailwindcss'],
+			deployedURL: 'https://react-multitimer.herokuapp.com/',
+			githubURL: 'https://github.com/jekiquin/multicountdown'
+		},
+		{
+			name: 'Simple Weather App',
+			role: 'Solo',
+			date: 'January 2022',
+			image: null,
+			description:
+				'Simple weather app implementing redux toolkit, rtk query and custom built pagination',
+			stacks: ['React', 'Sass', 'Tailwindcss', 'Redux Toolkit'],
+			deployedURL: '',
+			githubURL: 'https://github.com/jekiquin/simpleweatherapp'
 		}
 	]
 };
