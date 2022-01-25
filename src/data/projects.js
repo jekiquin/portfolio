@@ -60,7 +60,7 @@ export const PROJECTS = {
 			description:
 				'Simple weather app implementing redux toolkit, rtk query and custom built pagination',
 			stacks: ['React', 'Sass', 'Tailwindcss', 'Redux Toolkit'],
-			deployedURL: '',
+			deployedURL: 'https://ji-react-weatherapp.herokuapp.com/',
 			githubURL: 'https://github.com/jekiquin/simpleweatherapp'
 		}
 	]

@@ -57,7 +57,7 @@ export default function Project({ project }) {
 
 			<div className="p-4 overflow-hidden text-ellipsis overflow-hidden">
 				<button onClick={handleMouseEnter}>
-					<h3 className="text-2xl underline">{name}</h3>
+					<h3 className="text-2xl underline text-red-400">{name}</h3>
 				</button>
 				<p>{stacks.join(', ')}</p>
 			</div>
