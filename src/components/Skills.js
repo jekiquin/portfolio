@@ -11,12 +11,6 @@ export default function Skills() {
 
 	useEffect(() => {
 		const currentContainer = hexGrid.current;
-		// setMaxHexCol(currentContainer, hexColSize, setHexColSize)();
-		// window.addEventListener(
-		// 	'resize',
-		// 	setMaxHexCol(currentContainer, hexColSize, setHexColSize)
-		// );
-		// return () => window.removeEventListener('resize', setMaxHexCol());
 		setMaxHexCol(currentContainer, hexColSize, setHexColSize);
 	}, []);
 
