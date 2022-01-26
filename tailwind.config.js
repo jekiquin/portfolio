@@ -77,7 +77,7 @@ module.exports = {
 				'platform-up': 'platform-up 1s linear infinite alternate',
 				'letter-up': 'letter-up 1s linear infinite alternate',
 				'loading-fade': 'loading-fade 5s ease-in 1 forwards',
-				'main-hide': 'main-hide 6s ease-in 1 forwards'
+				'main-hide': 'main-hide 6s ease-in 1'
 			},
 			keyframes: {
 				slideIn: {
@@ -129,7 +129,7 @@ module.exports = {
 				},
 				'main-hide': {
 					'0%': { overflow: 'hidden', height: '100vh' },
-					'100%': { overflow: 'auto', height: 'fit-content' }
+					'100%': { height: 'auto' }
 				}
 			},
 			backgroundImage: {

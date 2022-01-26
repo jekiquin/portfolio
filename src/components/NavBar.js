@@ -10,7 +10,7 @@ export default function NavBar() {
 	};
 
 	return (
-		<nav className="relative bg-dark-gray text-white sticky top-0 z-20">
+		<nav className="bg-dark-gray text-white sticky top-0 z-20">
 			<div className="container mx-auto h-20 py-4 px-6 flex justify-between items-center md:px-10">
 				<a href="/">
 					<img className="w-24" src={LOGO.src} alt={LOGO.alt} />
