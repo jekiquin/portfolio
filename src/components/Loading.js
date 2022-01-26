@@ -17,7 +17,7 @@ export default function Loading() {
 		);
 	});
 	return (
-		<div className="fixed top-0 left-0 h-screen w-screen z-50 bg-black flex justify-center items-center gap-2 sm:gap-4">
+		<div className="fixed top-0 left-0 h-screen w-screen z-50 bg-black flex justify-center items-center animate-loading-fade sm:gap-4">
 			{displayLetters}
 		</div>
 	);

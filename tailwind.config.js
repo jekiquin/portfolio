@@ -71,11 +71,12 @@ module.exports = {
 				popout: 'popout 1s ease-in-out 1 forwards',
 				'rotate-modal': 'rotate-modal 2s ease-in-out 1 forwards',
 				'rotate-modal-reverse': 'rotate-modal-reverse 2s ease-in-out 1 forwards',
-				heroSlide: 'heroSlide 1s cubic-bezier(.32,.51,.64,1.15)  0.5s 1 forwards',
+				heroSlide: 'heroSlide 1s cubic-bezier(.32,.51,.64,1.15)  5s 1 forwards',
 				'heroSlide-reverse':
-					'heroSlide-reverse 1s cubic-bezier(.32,.51,.64,1.15)  0.5s 1 forwards',
-				'platform-up': 'platform-up 1s linear infinite alternate',
-				'letter-up': 'letter-up 1s linear infinite alternate'
+					'heroSlide-reverse 1s cubic-bezier(.32,.51,.64,1.15)  5s 1 forwards',
+				'platform-up': 'platform-up 0.5s linear infinite alternate',
+				'letter-up': 'letter-up 0.5s linear infinite alternate',
+				'loading-fade': 'loading-fade 5s ease-in 1 forwards'
 			},
 			keyframes: {
 				slideIn: {
@@ -119,6 +120,11 @@ module.exports = {
 				'letter-up': {
 					'0%': { transform: 'translateY(0%)' },
 					'100%': { transform: 'translateY(-2.5rem)' }
+				},
+				'loading-fade': {
+					'0%': { opacity: '1' },
+					'90%': { opacity: '1' },
+					'100%': { opacity: '0', zIndex: '-2' }
 				}
 			},
 			backgroundImage: {
