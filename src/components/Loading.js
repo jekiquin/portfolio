@@ -3,7 +3,7 @@ import uniqid from 'uniqid';
 
 export default function Loading() {
 	const displayLetters = LOADING.split('').map((letter, idx) => {
-		const delay = `animation-delay-${idx + 1}`;
+		const delay = `animation-delay-${idx}`;
 		return (
 			<div key={uniqid()} className="text-center">
 				<span

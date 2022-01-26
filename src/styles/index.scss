@@ -11,7 +11,7 @@
 	height: 2400px;
 }
 
-@for $i from 1 through 20 {
+@for $i from 0 through 20 {
 	.animation-delay-#{$i} {
 		animation-delay: $i * 0.2s;
 	}
