@@ -32,7 +32,7 @@ export default function Skills() {
 				<SkillName />
 
 				<div ref={hexGrid} className="flex flex-col width-11/12">
-					{displayHexRow}
+					{hexColSize && displayHexRow}
 				</div>
 			</div>
 		</div>
