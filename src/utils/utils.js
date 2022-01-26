@@ -41,10 +41,10 @@ function sectionObserverCallback(entries, observer) {
 }
 
 function hexObserverCallback(entries, observer) {
-	entries.forEach((entry, idx) => {
+	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
-			Array.prototype.forEach.call(entry.target.children, (child) =>
-				child.classList.add('animate-popout')
+			Array.prototype.forEach.call(entry.target.children, (child, idx) =>
+				child.classList.add('animate-popout', `animation-delay-${idx}`)
 			);
 		}
 	});
