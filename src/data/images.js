@@ -1,12 +1,12 @@
-import profile from 'assets/images/JerickIquin.jpg';
-import mainLogo from 'assets/logos/JI Scripts.png';
-import placeholder from 'assets/images/placeholder.jpg';
-import portfolio from 'assets/images/projects/portfolio.png';
-import arcade from 'assets/images/projects/virtual arcade.png';
-import jojo from 'assets/images/projects/jojos adventure.png';
-import brainflix from 'assets/images/projects/Brainflix.png';
-import weatherApp from 'assets/images/projects/simple weather app.png';
-import timer from 'assets/images/projects/multi timer.png';
+import profile from 'assets/images/JerickIquin.webp';
+import mainLogo from 'assets/logos/JI Scripts.webp';
+import placeholder from 'assets/images/placeholder.webp';
+import portfolio from 'assets/images/projects/portfolio.webp';
+import arcade from 'assets/images/projects/virtual arcade.webp';
+import jojo from 'assets/images/projects/jojos adventure.webp';
+import brainflix from 'assets/images/projects/Brainflix.webp';
+import weatherApp from 'assets/images/projects/simple weather app.webp';
+import timer from 'assets/images/projects/multi timer.webp';
 
 export const PROFILE = {
 	src: profile,
