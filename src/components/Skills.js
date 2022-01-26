@@ -11,12 +11,13 @@ export default function Skills() {
 
 	useEffect(() => {
 		const currentContainer = hexGrid.current;
-		setMaxHexCol(currentContainer, hexColSize, setHexColSize)();
-		window.addEventListener(
-			'resize',
-			setMaxHexCol(currentContainer, hexColSize, setHexColSize)
-		);
-		return () => window.removeEventListener('resize', setMaxHexCol());
+		// setMaxHexCol(currentContainer, hexColSize, setHexColSize)();
+		// window.addEventListener(
+		// 	'resize',
+		// 	setMaxHexCol(currentContainer, hexColSize, setHexColSize)
+		// );
+		// return () => window.removeEventListener('resize', setMaxHexCol());
+		setMaxHexCol(currentContainer, hexColSize, setHexColSize);
 	}, []);
 
 	useEffect(() => {
@@ -32,7 +33,7 @@ export default function Skills() {
 				<SkillName />
 
 				<div ref={hexGrid} className="flex flex-col width-11/12">
-					{hexColSize && displayHexRow}
+					{displayHexRow}
 				</div>
 			</div>
 		</div>

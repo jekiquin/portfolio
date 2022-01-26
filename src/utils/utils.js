@@ -1,13 +1,23 @@
 import { SKILLS, HEXWIDTH } from 'data/skills-list';
 
 export function setMaxHexCol(container, hexColSize, setHexColSize) {
-	return function () {
-		const { offsetWidth: width } = container;
-		const maxColSize = Math.floor(width / HEXWIDTH);
-		if (hexColSize !== maxColSize) {
-			setHexColSize(maxColSize);
+	const resizeObserver = new ResizeObserver((entries) => {
+		let width;
+		for (let entry of entries) {
+			if (entry.contentBoxSize[0]) {
+				width = entry.contentBoxSize[0].inlineSize;
+			} else if (entry.contentBoxSize) {
+				width = entry.contentBoxSize.inlineSize;
+			} else {
+				width = entry.contentRect.width;
+			}
+			const maxColSize = Math.floor(width / HEXWIDTH);
+			if (hexColSize !== maxColSize) {
+				setHexColSize(maxColSize);
+			}
 		}
-	};
+	});
+	resizeObserver.observe(container);
 }
 
 export function setSkillsGroup(maxColSize, setHexGroup) {
