@@ -73,7 +73,9 @@ module.exports = {
 				'rotate-modal-reverse': 'rotate-modal-reverse 2s ease-in-out 1 forwards',
 				heroSlide: 'heroSlide 1s cubic-bezier(.32,.51,.64,1.15)  0.5s 1 forwards',
 				'heroSlide-reverse':
-					'heroSlide-reverse 1s cubic-bezier(.32,.51,.64,1.15)  0.5s 1 forwards'
+					'heroSlide-reverse 1s cubic-bezier(.32,.51,.64,1.15)  0.5s 1 forwards',
+				'platform-up': 'platform-up 1s linear infinite alternate',
+				'letter-up': 'letter-up 1s linear infinite alternate'
 			},
 			keyframes: {
 				slideIn: {
@@ -109,6 +111,14 @@ module.exports = {
 				'heroSlide-reverse': {
 					'0%': { transform: 'translateX(999%)' },
 					'100%': { transform: 'translateX(1)', opacity: '1' }
+				},
+				'platform-up': {
+					'0%': { transform: 'scaleY(1)' },
+					'100%': { transform: 'scaleY(10)' }
+				},
+				'letter-up': {
+					'0%': { transform: 'translateY(0%)' },
+					'100%': { transform: 'translateY(-2.5rem)' }
 				}
 			},
 			backgroundImage: {
@@ -117,5 +127,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [globalPlugins, require('tailwindcss-animation-delay')]
+	plugins: [globalPlugins]
 };

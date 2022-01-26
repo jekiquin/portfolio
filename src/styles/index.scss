@@ -11,6 +11,12 @@
 	height: 2400px;
 }
 
+@for $i from 1 through 20 {
+	.animation-delay-#{$i} {
+		animation-delay: $i * 0.2s;
+	}
+}
+
 @layer base {
 	section {
 		@apply p-4 scroll-mt-20;

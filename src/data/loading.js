@@ -1,0 +1,1 @@
+exports.LOADING = 'JIScripts';
