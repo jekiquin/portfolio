@@ -76,7 +76,8 @@ module.exports = {
 					'heroSlide-reverse 1s cubic-bezier(.32,.51,.64,1.15)  5s 1 forwards',
 				'platform-up': 'platform-up 0.5s linear infinite alternate',
 				'letter-up': 'letter-up 0.5s linear infinite alternate',
-				'loading-fade': 'loading-fade 5s ease-in 1 forwards'
+				'loading-fade': 'loading-fade 5s ease-in 1 forwards',
+				'main-hide': 'main-hide 6s ease-in 1 forwards'
 			},
 			keyframes: {
 				slideIn: {
@@ -125,6 +126,10 @@ module.exports = {
 					'0%': { opacity: '1' },
 					'90%': { opacity: '1' },
 					'100%': { opacity: '0', zIndex: '-2' }
+				},
+				'main-hide': {
+					'0%': { overflow: 'hidden', height: '100vh' },
+					'100%': { overflow: 'auto', height: 'fit-content' }
 				}
 			},
 			backgroundImage: {

@@ -8,7 +8,7 @@ import Loading from 'components/Loading';
 
 function App() {
 	return (
-		<main className="App relative sm:text-base">
+		<main className="App relative animate-main-hide sm:text-base">
 			<Loading />
 			<Banner />
 			<div>
