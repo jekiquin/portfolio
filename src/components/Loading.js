@@ -12,12 +12,12 @@ export default function Loading() {
 					{letter}
 				</span>
 				<div
-					className={`h-1 w-4 bg-red-600 animate-platform-up origin-bottom ${delay} sm:w-8`}></div>
+					className={`h-1 w-6 bg-red-600 animate-platform-up origin-bottom ${delay} sm:w-8`}></div>
 			</div>
 		);
 	});
 	return (
-		<div className="fixed top-0 left-0 h-screen w-screen z-50 bg-black flex justify-center items-center animate-loading-fade sm:gap-4">
+		<div className="fixed top-0 left-0 h-screen w-screen z-50 bg-black flex justify-center items-center animate-loading-fade gap-2 sm:gap-4">
 			{displayLetters}
 		</div>
 	);
