@@ -27,8 +27,8 @@ export default function Project({ project }) {
 			className="scale-0 w-80 h-80 rounded-xl overflow-hidden bg-light-blue shadow-2xl sm:w-96 sm:h-96"
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}>
-			<div className="h-fit relative">
-				<img className="object-cover h-full" src={displayImage} alt={name} />
+			<div className="h-1/2 relative">
+				<img className="h-full" src={displayImage} alt={name} />
 				<div
 					className={`${modalView} scale-x-0 absolute top-0 left-0 h-full w-full p-4 flex flex-col justify-between items-center bg-trans-green text-white`}>
 					<h3>{description}</h3>
