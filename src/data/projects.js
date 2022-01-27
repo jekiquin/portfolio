@@ -10,7 +10,7 @@ export const PROJECTS = {
 			image: PROJECT_IMAGES.portfolio,
 			description: 'Portfolio Project',
 			stacks: ['React', 'SASS', 'TailwindCSS'],
-			deployedURL: 'jerick-iquin.herokuapp.com',
+			deployedURL: 'https://jerick-iquin.herokuapp.com',
 			githubURL: 'https://github.com/jekiquin/portfolio'
 		},
 		{
@@ -21,7 +21,7 @@ export const PROJECTS = {
 			description:
 				'Capstone Project. Library of retro games - Space Invaders, Pong, Breakout, and indie game - Jojo.',
 			stacks: ['React', 'React Router', 'Axios', 'SASS', 'PhaserJs', 'NodeJs', 'Express'],
-			deployedURL: 'virtualarcade-client.herokuapp.com/home',
+			deployedURL: 'https://virtualarcade-client.herokuapp.com/home',
 			githubURL: 'https://github.com/jekiquin/jerick-iquin-capstone'
 		},
 		{
@@ -51,7 +51,7 @@ export const PROJECTS = {
 			image: PROJECT_IMAGES.timer,
 			description: 'Just a simple countdown timers implementing context and reducers',
 			stacks: ['React', 'Sass', 'Tailwindcss'],
-			deployedURL: 'react-multitimer.herokuapp.com/',
+			deployedURL: 'https://react-multitimer.herokuapp.com/',
 			githubURL: 'https://github.com/jekiquin/multicountdown'
 		},
 		{
@@ -62,7 +62,7 @@ export const PROJECTS = {
 			description:
 				'Simple weather app implementing redux toolkit, rtk query and custom built pagination',
 			stacks: ['React', 'Sass', 'Tailwindcss', 'Redux Toolkit'],
-			deployedURL: 'ji-react-weatherapp.herokuapp.com/',
+			deployedURL: 'https://ji-react-weatherapp.herokuapp.com/',
 			githubURL: 'https://github.com/jekiquin/simpleweatherapp'
 		}
 	]
