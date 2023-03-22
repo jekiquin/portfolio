@@ -10,7 +10,7 @@ export const PROJECTS = {
       image: PROJECT_IMAGES.portfolio,
       description: 'Portfolio Project',
       stacks: ['React', 'SASS', 'TailwindCSS'],
-      deployedURL: 'https://jerick-iquin.herokuapp.com',
+      deployedURL: 'https://jerickiquin-2022.onrender.com',
       githubURL: 'https://github.com/jekiquin/portfolio',
     },
     {
